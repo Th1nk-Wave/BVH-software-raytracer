@@ -1,6 +1,6 @@
 #include "ray.h"
 
-inline void intersect_triangle( ray* ray, const triangle* tri) {
+void intersect_triangle( ray* ray, const triangle* tri) {
     vec3 edge1;
     edge1[0] = tri->vertex1[0] - tri->vertex0[0];
     edge1[1] = tri->vertex1[1] - tri->vertex0[1];
