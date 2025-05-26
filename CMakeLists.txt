@@ -19,3 +19,9 @@ source_group("sources" FILES ${PROJECT_SOURCES})
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} ${PROJECT_HEADERS}
                                                   ${PROJECT_CONFIGS})
+
+
+target_link_libraries(${PROJECT_NAME} PUBLIC "user32.dll")
+target_link_libraries(${PROJECT_NAME} PUBLIC "imm32.dll")
+target_link_libraries(${PROJECT_NAME} PUBLIC "gdi32.dll")
+target_link_libraries(${PROJECT_NAME} PUBLIC "opengl32.dll")
